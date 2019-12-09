@@ -10,7 +10,7 @@
 
 # Second task in homework (fourth lesson)
     # 1 part of task
-
+#
 # l = 0
 # while l < 10:
 #     l = l + 1
@@ -93,18 +93,18 @@
             # Определите, какое наибольшее число подряд идущих элементов этой последовательности равны друг другу.
 
 # a = [1, 2, 2, 3, 4, 5, 5, 5, 24, 24, 6, 6, 6, 6]
-# # b = -1
-# # count = 0
-# # max_count = 0
-# # for i in a:
-# #     if b == i:
-# #         count = count + 1
-# #     else:
-# #         b = i
-# #         max_count = max(count, max_count)
-# #         count = 1
-# # max_count = max(count, max_count)
-# # print(max_count)
+# b = -1
+# count = 0
+# max_count = 0
+# for i in a:
+#     if b == i:
+#         count = count + 1
+#     else:
+#         b = i
+#         max_count = max(count, max_count)
+#         count = 1
+# max_count = max(count, max_count)
+# print(max_count)
 
 #Fifth Task in homework
 
@@ -145,13 +145,15 @@
 #Это уже было в предыдущем ДЗ, но теперь оформите это функцией:
 #  3)	Написать функцию is_year_leap, принимающую 1 аргумент — год, и возвращающую True, если год високосный, и False иначе
 
-# def is_year_leap(year):
-#     year =int(year)
-#     if ((year % 4 == 0) and (year % 100 !=0)) or (year % 400 == 0):
-#         return True
-#     else:
-#         return False
-# print(is_year_leap(2016))
+
+def is_year_leap(year):
+    year =int(year)
+    if ((year % 4 == 0) and (year % 100 !=0)) or (year % 400 == 0):
+        return True
+    else:
+        return False
+if __name__ == "__main__":
+    print(is_year_leap(2016))
 
 #4)	Функция принимает три числа a, b, c.
 # Функция должна определить, существует ли треугольник с такими сторонами. Если треугольник существует, вернёт True, иначе False.
