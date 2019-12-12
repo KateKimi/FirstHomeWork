@@ -35,8 +35,10 @@ print(l)
 Значения нового словаря должны быть переведены в нижний регистр и удалены всё небуквенные символы из них.
 
 """
+from Homework_five import notalpha
+
 d = {"name": "Bob", "surname": "Star", "age": None, "position": "manager ", "address": "super Street 24 ", "skills": "programming "}
 d2 = {x: type(d[x]) for x in d }
 print(d2)
-d3 = {x: d[x].lower() for x in d if type(d[x]) == str}
+d3 = {x: notalpha(d[x].lower()) for x in d if type(d[x]) == str}
 print(d3)
